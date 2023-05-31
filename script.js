@@ -50,3 +50,28 @@ navDropdowns.forEach(el => {
     }
   })
 });
+
+
+// Hero Modal
+
+function openModal() {
+    const videoFrame = document.getElementById('video-frame');
+    const videoUrl = 'https://www.youtube.com/embed/Xtt5qKzsXa0?controls=0&autoplay=1';
+    videoFrame.src = videoUrl;
+    videoModal.style.display = 'block';
+}
+
+function closeModal() {
+    const videoFrame = document.getElementById('video-frame');
+    videoFrame.src = '';
+    videoModal.style.display = 'none';
+}
+    
+const videoModal = document.getElementById('videoModal');
+
+window.onclick = function(event) {
+    if (event.target == videoModal) {
+      closeModal();
+    }
+};
+  
