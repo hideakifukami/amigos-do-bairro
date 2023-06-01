@@ -74,4 +74,19 @@ window.onclick = function(event) {
       closeModal();
     }
 };
-  
+
+// Testimonials carousel
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    nav: true,
+    navText: ["<span class='carousel-control-prev-icon'></span>", "<span class='carousel-control-next-icon'></span>"],
+    autoplay: true,
+    autoplayTimeout: 5000,
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    smartSpeed: 1000
+  });
+});

@@ -7,13 +7,13 @@
     <title>Amigos do Bairro - ZL</title>
     <!--Importação do CSS do Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--Estilo-->
+    <link rel="stylesheet" href="style.css">
     <!--Importação do CSS do Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!--Importação do CSS da AOS => https://github.com/michalsnik/aos-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />    
 
-    
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header id="header" class="header fixed-top d-flex align-items-center">
@@ -228,13 +228,158 @@
       </section>
       
       <!-- Cards em carrossel com comentários-->
-      <section class="comments">
-  
+      
+      <section class="comments container-xxl pt-5">
+        <div class="container">
+          <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+            <p class="fs-5 fw-medium text-primary">Testimonial</p>
+            <h1 class="display-5 mb-5">What Clients Say About Our Services!</h1>
+        </div>
+    
+        <div id="testimonialCarousel" class="carousel slide testimonial-carousel fadeInUp" data-delay="0.1s" data-bs-ride="carousel" data-bs-interval="5000">
+          <div class="caroulsel-inner">
+            <div class="carousel-item active">
+              <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                <img class="mb-4" src="/assets/img/team/amanda-lopes.jpg" alt="">
+                <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
+                <h5>Amanda</h5>
+                <span class="text-primary">Profession</span>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                <img class="mb-4" src="/assets/img/team/amanda-lopes.jpg" alt="">
+                <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
+                <h5>Yan</h5>
+                <span class="text-primary">Amanda</span>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                <img class="mb-4" src="/assets/img/team/amanda-lopes.jpg" alt="">
+                <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
+                <h5>Client Name</h5>
+                <span class="text-primary">Amigos</span>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                <img class="mb-4" src="/assets/img/team/amanda-lopes.jpg" alt="">
+                <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
+                <h5>Client Name</h5>
+                <span class="text-primary">Teste</span>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                <img class="mb-4" src="/assets/img/team/amanda-lopes.jpg" alt="">
+                <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
+                <h5>Client Name</h5>
+                <span class="text-primary">Profession</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </section>
+      
+        
   
       <!-- Cards com equipe do coletivo-->
       <section class="team">
-  
+        <section id="team" class="team">
+          <div class="container" data-aos="fade-up">
+    
+            <div class="section-title">
+              <h2>Time</h2>
+              <p>Conheça o time desse coletivo</p>
+            </div>
+    
+            <div class="row">
+    
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="member" data-aos="fade-up" data-aos-delay="100">
+                  <div class="member-img">
+                    <img src="assets/img/team/amanda-lopes.jpg" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href=""><i class="bi bi-twitter"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>Amanda Lopes</h4>
+                    <span>Arte Educadora / Artista Visual / Fotógrafa</span>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="member" data-aos="fade-up" data-aos-delay="200">
+                  <div class="member-img">
+                    <img src="assets/img/team/larissa-beltran.jpg" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href=""><i class="bi bi-twitter"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>Larissa Beltran</h4>
+                    <span>Fotógrafa / Arte Educadora</span>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="member" data-aos="fade-up" data-aos-delay="300">
+                  <div class="member-img">
+                    <img src="assets/img/team/mariana-ramalho.jpg" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href=""><i class="bi bi-twitter"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>Mariana Santos Ramanlho</h4>
+                    <span>Arte Educadora / Elaboradora de projetos sociais sustentáveis / Gastróloga</span>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="member" data-aos="fade-up" data-aos-delay="400">
+                  <div class="member-img">
+                    <img src="assets/img/team/yan-guilherme.jpg" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href=""><i class="bi bi-twitter"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>Yan Guilherme Barbosa Herculano</h4>
+                    <span>Artista Visual / Educador / Produtor cultural</span>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+    
+          </div>
+        </section>
       </section>
   
       <!-- Collapse list-->
@@ -413,15 +558,15 @@
   </footer>
   <!-- End Footer -->
         
-    <script src="script.js"></script>
-    <!--Importação do JS do Youtube-->
-    <script src="https://www.youtube.com/player_api"></script>
-    <!--Importação do JS do Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <!--Importação do JS da AOS => https://github.com/michalsnik/aos-->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+  <script src="script.js"></script>
+  <!--Importação do JS do Youtube-->
+  <script src="https://www.youtube.com/player_api"></script>
+  <!--Importação do JS do Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <!--Importação do JS da AOS => https://github.com/michalsnik/aos-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
