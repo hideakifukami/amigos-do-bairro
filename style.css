@@ -20,6 +20,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-default);
   color: var(--color-default);
