@@ -846,15 +846,19 @@ section {
   margin-bottom: 2rem;
   padding: 1rem;
   /*padding-right: 1rem;*/
-  border-width: 3px;
-  border-style: solid;
-  border-image: 
-    linear-gradient(
-      to bottom, 
-      rgb(9, 97, 180), 
-      rgb(94, 7, 7)
-    ) 1 100%;
+  border-radius: 10px;
+  border-color: linear-gradient(to left, rgb(9, 97, 180), rgb(94, 7, 7));
     margin-left: 2rem;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+
 }
 
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 6px;
+}
+.border-gradient-insta{
+  border-image-source: linear-gradient(to left, rgb(9, 97, 180), rgb(94, 7, 7));
+}
 
