@@ -850,7 +850,7 @@ section {
   border-color: linear-gradient(to left, rgb(9, 97, 180), rgb(94, 7, 7));
     margin-left: 2rem;
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
-
+  
 }
 
 .border-gradient {
@@ -861,4 +861,27 @@ section {
 .border-gradient-insta{
   border-image-source: linear-gradient(to left, rgb(9, 97, 180), rgb(94, 7, 7));
 }
-
+.galery{
+  background-image: url(assets/img/blob-scene-haikei2.svg);
+  background-repeat:repeat-y;
+  width: 100%;
+  background-size: 100%;
+}
+#instaz img{
+  width: 100px;
+  height: min-content;
+  box-sizing: border-box;
+  border:  #2a2c39;
+}
+#instalog{
+  display: inline-block;
+  padding: 60px;
+  color: #2a2c39;
+  text-transform: uppercase;
+}
+.newsletter{
+  background-image: url(assets/img/layered-waves-haikeinew.svg);
+  height: max-content;
+  width: 100%;
+  background-size: 100%;
+}
