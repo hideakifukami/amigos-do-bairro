@@ -644,8 +644,7 @@ section {
   width: 100%;
   display: inline-block;
   text-align: center;
-  
-  
+
 }
 #cr{
   width: 100%;
@@ -998,8 +997,17 @@ h1{
 .maptorre{
   padding: 100px;
   margin:auto;
+  margin-top: -10%;
   text-align: center;
 }
 #gmap{
   box-shadow: 0 2px 15px #7e7c7c;
+}
+#rota{
+  margin: auto;
+  
+}
+#rota h3{
+  text-transform: uppercase;
+  
 }
