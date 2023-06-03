@@ -729,7 +729,7 @@ h1{
 # team
 --------------------------------------------------------------*/
 .team {
-  background: #FCEA4E;
+  background: #ffc451;
   padding: 60px 0;
 }
 #timeh2{
@@ -775,7 +775,7 @@ h1{
 
 .team .member .social a:hover {
   color: #151515;
-  background: #ffc451;
+  
 }
 
 .team .member .social i {
