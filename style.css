@@ -632,20 +632,47 @@ section {
 /* .comments div{
   justify-content: space-between;
 } */
-
+.comments{
+  background-color: #f14b7de1;
+  text-align: center;
+  
+  
+  
+}
+#tit{
+  padding: 60px 0;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  
+  
+}
+#cr{
+  width: 100%;
+  margin: auto;
+  color: #ececf1;
+}
+h1{
+  text-align: center;
+  color: #151515;
+  font-family:var(--font-secondary)
+  
+}
 .testimonial-item {
-  box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+  box-shadow: 0 10px 45px rgba(0, 0, 0, .07);
   transition: .5s;
+  background: #ffffff
 }
 
 .owl-item .testimonial-item,
 .testimonial-item * {
   transition: .5s;
+
 }
 
 .owl-item.center .testimonial-item,
 .testimonial-item:hover {
-  background: var(--primary);
+  background: #ffffff
 }
 
 .testimonial-item img {
@@ -703,10 +730,12 @@ section {
 # team
 --------------------------------------------------------------*/
 .team {
-  background: #fff;
+  background: #FCEA4E;
   padding: 60px 0;
 }
-
+#timeh2{
+  color: #151515;
+}
 .team .member {
   margin-bottom: 20px;
   overflow: hidden;
@@ -962,4 +991,15 @@ section {
 
 .footer .footer-legal .credits a {
   color: var(--color-primary);
+}
+h1{
+  text-align: center;
+}
+.maptorre{
+  padding: 100px;
+  margin:auto;
+  text-align: center;
+}
+#gmap{
+  box-shadow: 0 2px 15px #7e7c7c;
 }
