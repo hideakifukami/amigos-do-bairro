@@ -7,472 +7,569 @@
     <title>Amigos do Bairro - ZL</title>
     <!--Importação do CSS do Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <!--Estilo-->
-    <link rel="stylesheet" href="style.css">
     <!--Importação do CSS do Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!--Importação do CSS da AOS => https://github.com/michalsnik/aos-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />    
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="animate.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header id="header" class="header fixed-top d-flex align-items-center">
-      <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-  
-        <a href="index.html" class="logo d-flex align-items-center">
-          <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1>Amigos do Bairro<span>.</span></h1>
-        </a>
-  
-        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="blog.html" class="active">Blog</a></li>
-            <li class="dropdown"><a href="#"><span>Dropdown</span> <i
-                  class="bi bi-chevron-down dropdown-indicator"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                      class="bi bi-chevron-down dropdown-indicator"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    
-    <main>
-      <!-- Carrossel com botão para modal -->
-      <section class="hero">
-  
-        <div class="info d-flex align-items-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-6 text-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-                <!--Uso da biblioteca AOS para animações-->
-                <h2 data-aos="fade-down" data-aos-duration="1000">Bem-vindo ao <br>Amigos do Bairro</h2>
-                <p data-aos="fade-up">Permita-se embarcar em uma jornada de arte, cultura e transformação que irá encantar seus sentidos e aquecer seu coração. Conheça nosso trabalho e faça parte dessa experiência única que marca a vida de muitos.</p>
-                      
-                
-        
-                  <button data-aos="fade-up" data-aos-delay="200" type="button" class="btn-get-started btn" onclick="openModal()">
-                    Assista ao Vídeo!
-                  </button>
-                  
-                  <div id="videoModal" class="modal">
-                    <div class="modal-dialog modal-dialog-centered">
-                      <div class="modal-content">
-                        <div class="modal-body">
-                          <button type="button" class="close" data-dismiss="modal" onclick="closeModal()">
-                            <span>&times;</span>
-                          </button>
-                          <div class="video-container embed-responsive embed-responsive-16by9">
-                            <iframe width="100%" height="100%" src="" title="Amigos do Bairro" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; autoplay;" allowfullscreen class="embed-responsive-item" id="video-frame"></iframe>
-                          </div>
-                        </div>
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Amigos do Bairro<span>.</span></h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Saiba Mais</span> <i
+            class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#about">O Coletivo</a></li>
+              <li><a href="#aboutTorre">Torre da Paz</a></li>
+              <li><a href="#volunteer">Voluntariado</a></li>
+              <li><a href="#team">Arte-educadores</a></li>
+              <li><a href="#resources">Outros Recursos</a></li>
+
+            </ul>
+          </li>
+          <li><a href="#newsletter">Notícias</a></li>
+          <li><a href="#events">Eventos </a></li>
+          <li><a href="#insta">Galeria</a></li>
+          <li><a href="#faq">FAQ</a></li>        
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    
+  <main>
+    <!-- Carrossel com botão para modal -->
+    <section class="hero">
+      <div class="info d-flex align-items-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+              <!--Uso da biblioteca AOS para animações-->
+              <h2 data-aos="fade-down" data-aos-duration="1000">Bem-vindo ao <br>Amigos do Bairro</h2>
+              <p data-aos="fade-up">Permita-se embarcar em uma jornada de arte, cultura e transformação que irá encantar seus sentidos e aquecer seu coração. Conheça nosso trabalho e faça parte dessa experiência única que marca a vida de muitos.</p>
+                                            
+              <button data-aos="fade-up" data-aos-delay="200" type="button" class="btn-get-started btn" onclick="openModal()">
+                Assista ao Vídeo!
+              </button>
+              
+              <div id="videoModal" class="modal">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <button type="button" class="close" data-dismiss="modal" onclick="closeModal()">
+                        <span>&times;</span>
+                      </button>
+                      <div class="video-container embed-responsive embed-responsive-16by9">
+                        <iframe width="100%" height="100%" src="" title="Amigos do Bairro" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; autoplay;" allowfullscreen class="embed-responsive-item" id="video-frame"></iframe>
                       </div>
                     </div>
                   </div>
-              
-              
-                
-                
-                
-                
+                </div>
               </div>
             </div>
           </div>
         </div>
-    
-        <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-    
-          <div class="carousel-item active" style="background-image: url(/assets/img/hero-carousel/hero-carousel-1.jpg)"></div>
-          <div class="carousel-item" style="background-image: url(/assets/img/hero-carousel/hero-carousel-2.jpg)"></div>
-          <div class="carousel-item" style="background-image: url(/assets/img/hero-carousel/hero-carousel-3.jpg)"></div>
-          <div class="carousel-item" style="background-image: url(/assets/img/hero-carousel/hero-carousel-4.jpg)"></div>
-          <div class="carousel-item" style="background-image: url(/assets/img/hero-carousel/hero-carousel-5.jpg)"></div>
-    
-          <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-          </a>
-    
-          <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-          </a>
-    
+      </div>
+  
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/hero-carousel-1.jpg)"></div>
+        <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-2.jpg)"></div>
+        <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-3.jpg)"></div>
+        <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-4.jpg)"></div>
+        <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-5.jpg)"></div>
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+      </div>    
+    </section>
+  
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/img/about/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>O Coletivo Amigos do Bairro ZL: Transformando vidas através da arte e cultura</h3>
+            <p class="fst-italic">
+              No coração da Zona Leste de São Paulo, surge o Coletivo Amigos do Bairro ZL, uma iniciativa formada por quatro apaixonados arte educadores. Juntos, eles compartilham o desejo de criar um impacto positivo na comunidade através de ações socioculturais significativas.
+            </p>
+            <p>
+              Desde suas origens com projetos independentes, esses educadores encontraram no trabalho em equipe a oportunidade de ampliar seu alcance e realizar atividades consistentes. No turbulento ano de 2021, em meio à pandemia, o Coletivo Amigos do Bairro ZL tomou forma e se tornou uma realidade poderosa.
+            </p>
+            <p>
+              No Amigos do Bairro ZL, acreditamos no poder do brincar e no direito de todas as crianças e adolescentes de explorarem sua criatividade e se expressarem livremente. Junte-se a nós nessa missão de proporcionar vivências enriquecedoras, abrir horizontes e promover uma educação transformadora.
+            </p>
+            <p>
+              Seja bem-vindo ao Coletivo Amigos do Bairro ZL!
+            </p>
+          </div>
         </div>
-            
-      </section>
-    
-      <!-- ======= About Section ======= -->
-      <section id="about" class="about">
-        <div class="container" data-aos="fade-up">
+      </div>
+    </section><!-- End About Section -->
+      
+    <!-- Informações da Torre e da Construção da Sede-->
+    <section id="aboutTorre" class="aboutTorre about">
+      <div class="container" data-aos="fade-up">
 
-          <div class="row">
-            <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-              <img src="assets/img/about/about.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-              <h3>O Coletivo Amigos do Bairro ZL: Transformando vidas através da arte e cultura</h3>
-              <p class="fst-italic">
-                No coração da Zona Leste de São Paulo, surge o Coletivo Amigos do Bairro ZL, uma iniciativa formada por quatro apaixonados arte educadores. Juntos, eles compartilham o desejo de criar um impacto positivo na comunidade através de ações socioculturais significativas.
-              </p>
-              <p>
-                Desde suas origens com projetos independentes, esses educadores encontraram no trabalho em equipe a oportunidade de ampliar seu alcance e realizar atividades consistentes. No turbulento ano de 2021, em meio à pandemia, o Coletivo Amigos do Bairro ZL tomou forma e se tornou uma realidade poderosa.
-              </p>
-              <p>
-                No Amigos do Bairro ZL, acreditamos no poder do brincar e no direito de todas as crianças e adolescentes de explorarem sua criatividade e se expressarem livremente. Junte-se a nós nessa missão de proporcionar vivências enriquecedoras, abrir horizontes e promover uma educação transformadora.
-              </p>
-              <p>
-                Seja bem-vindo ao Coletivo Amigos do Bairro ZL!
-              </p>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 order-1" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/img/about-torre/aboutTorre.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>Torre da Paz: Um refúgio de arte e transformação</h3>
+            <p class="fst-italic">
+              Na região de Ermelino Matarazzo, ergue-se a imponente Torre da Paz, um símbolo de resistência e inspiração.
+            </p>
+            <p>
+              Através de projetos e vivências enriquecedoras, o Coletivo Amigos do Bairro ZL se dedica a revitalizar o espaço da Torre da Paz, transformando-o em um ambiente acolhedor e cheio de possibilidades. 
+            </p>
+            <p>
+              Com atividades como graffiti, desenho, pintura, pocket shows e atividades lúdicas, o coletivo tem um sonho ambicioso: construir uma sede na Torre da Paz. Essa sede será um espaço onde poderemos expandir nossas atividades e impactar ainda mais vidas.
+            </p>
+            <p>
+              Junte-se a nós e deixe sua marca na história do nosso coletivo e da Torre da Paz!
+            </p>
+            <div class="d-flex justify-content-end mt-4">
+              <a class="aboutTorre-btn ml-3" href="#">Contribua para a Sede!</a>
             </div>
           </div>
-
         </div>
-      </section><!-- End About Section -->
-        
-      <!-- Informações da Torre e da Construção da Sede-->
-      <section id="aboutTorre" class="aboutTorre about">
-        <div class="container" data-aos="fade-up">
+      </div>
+    </section><!-- End About Section -->
+    
+    <section class="infographics">
 
-          <div class="row">
-            <div class="col-lg-6 order-1" data-aos="fade-left" data-aos-delay="100">
-              <img src="assets/img/about-torre/aboutTorre.jpg" class="img-fluid" alt="">
+    </section>
+    
+    <!-- Paralax com forms em modal-->
+    <section id="volunteer" class="volunteer">
+      <div class="container" data-aos="zoom-in">
+        <div class="text-center">
+          <h3>Voluntários</h3>
+          <p>Junte-se a nós como voluntário e ajude-nos a revitalizar espaços, promover vivências artísticas e garantir o direito ao brincar. Se você deseja deixar um impacto positivo na comunidade, clique no botão abaixo e preencha o formulário. Venha fazer parte dessa incrível jornada de transformação!</p>
+          <a class="volunteer-btn" href="#">Seja um Voluntário!</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards com eventos direcionando para mais informações e fotos-->
+    <section id="events" class="events">
+        <a href="/evento/1"></a>
+    </section>
+
+    <!-- API Instagram -->
+    
+    <section id="insta" class="galery">
+      <!-- Gallery -->
+      <div class="container mx-auto mt-4" id="instaz">
+        <img src="assets/img/insta.png">
+        <h1 id="instalog"><b>Galeria do Instagram</b></h1>
+      </div>
+      
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4  mb-4 mb-lg-0">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Boat on Calm Water"
+            />
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Wintry Mountain Landscape"
+            />
+          </div>
+          <div class="col-md-4 mb-4 mb-lg-0">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Mountains in the Clouds"
+            />
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Boat on Calm Water"
+            />
+          </div>
+          <div class="col-md-4 mb-4 mb-lg-0 ">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Waves at Sea"
+            />
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Yosemite National Park"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIM Gallery -->
+
+    <!-- Cards com artigos e direcionamento para cadastro-->
+    <section id="newsletter" class="newsletter">
+      <div class="container">
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Feed</h2>
+          <p>Notícias</p>
+        </div>
+      </div>
+      <div class="container mx-auto mt-4 d-flex">
+        <div class="row">
+          <!--Card ponta alta esquerda-->
+          <div class="col-md-4 mt-3">
+            <div class="card-artigo" style="width: 18rem;">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                
+              </div>
             </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 order-2 content" data-aos="fade-right" data-aos-delay="100">
-              <h3>Torre da Paz: Um refúgio de arte e transformação</h3>
-              <p class="fst-italic">
-                Na região de Ermelino Matarazzo, ergue-se a imponente Torre da Paz, um símbolo de resistência e inspiração.
-              </p>
-              <p>
-                Através de projetos e vivências enriquecedoras, o Coletivo Amigos do Bairro ZL se dedica a revitalizar o espaço da Torre da Paz, transformando-o em um ambiente acolhedor e cheio de possibilidades. 
-              </p>
-              <p>
-                Com atividades como graffiti, desenho, pintura, pocket shows e atividades lúdicas, o coletivo tem um sonho ambicioso: construir uma sede na Torre da Paz. Essa sede será um espaço onde poderemos expandir nossas atividades e impactar ainda mais vidas.
-              </p>
-              <p>
-                Junte-se a nós e deixe sua marca na história do nosso coletivo e da Torre da Paz!
-              </p>
-              <div class="d-flex justify-content-end mt-4">
-                <a class="aboutTorre-btn ml-3" href="#">Contribua para a Sede!</a>
+          </div>  
+          <!--Card alto meio-->  
+          <div class="col-md-4 mt-3">
+            <div class="card-artigo" style="width: 18rem;">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>   
+          <!--Card ponta alta direita--> 
+          <div class="col-md-4 mt-3">
+            <div class="card-artigo" style="width: 18rem;">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card title</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>          
               </div>
             </div>
           </div>
+          <!--Card ponta baixa esquerda-->
+          <div class="col-md-4 mt-3">
+            <div class="card-artigo" style="width: 18rem;">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>          
+              </div>
+            </div>
+          </div>
+          <!--Card baixa meio-->    
+          <div class="col-md-4 mt-3">
+            <div class="card-artigo" style="width: 18rem;">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                
+              </div>
+            </div>
+          </div>
+          <!--Card ponta baixa direita-->
+          <div class="col-md-4 mt-3">
+            <div class="card-artigo" style="width: 18rem;">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+              
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-4 col-sm-12 col-xs-12"> 
+            <div class="card-newsletter p-3 p-md-4 text-white">    
+              <span><i class="fa fa-envelope-open-o fa-2x" aria-hidden="true"></i></span> 
+              <h6 class="my-3"> Se inscreva no nosso newsletter </h6>
+              <div class="row d-flex my-2 pr-2 pr-md-5 div1">
+                <div class="col-9">
+                  <input type="email" class="form-control py-3" id="inp1" placeholder="Enter email address">
+                </div>
+                <div class="col-3 px-0">
+                  <button class="btn text-white px-4 py-2"> OK </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Parallax Atividade Lúdica + Materiais para Download + Biblioteca Digital + Recursos da Região -->
+    <section id="resources" class="resources">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center  data-aos="zoom-out"">
+          <h3>Conteúdo Interativo</h3>
+          <p>Nossa página de recursos oferece uma oportunidade única de aprendizado e diversão para crianças e adolescentes. Faça o download de guias, modelos, jogos e muito mais, tudo projetado para estimular a criatividade e o desenvolvimento.</p>
+          <a class="resources-btn" href="/resources">Saiba Mais!</a>
         </div>
-      </section><!-- End About Section -->
-      
-      <section class="infographics">
-  
-      </section>
-      
-      <!-- Paralax com forms em modal-->
-      <section class="volunteer">
-        <div class="container" data-aos="zoom-in">
-  
-          <div class="text-center">
-            <h3>Voluntários</h3>
-            <p>Junte-se a nós como voluntário e ajude-nos a revitalizar espaços, promover vivências artísticas e garantir o direito ao brincar. Se você deseja deixar um impacto positivo na comunidade, clique no botão abaixo e preencha o formulário. Venha fazer parte dessa incrível jornada de transformação!</p>
-            <p></p>
-            <a class="volunteer-btn" href="#">Seja um Voluntário!</a>
-          </div>
-  
-        </div>
-      </section>
-      
-      <!-- Cards com eventos direcionando para mais informações e fotos-->
-      <section class="events">
-          <a href="/evento/1"></a>
-      </section>
-  
-      <!-- API Instagram -->
-      <section class="galery">
-      
-      </section>
-  
-      <!-- Cards com artigos e direcionamento para cadastro-->
-      <section class="newsletter">
-          <a href="/newsletter/1"></a>
-      </section>
-  
-      <!-- Parallax Atividade Lúdica + Materiais para Download + Biblioteca Digital + Recursos da Região -->
-      <section class="resources">
-        <div class="container" data-aos="zoom-in">
-  
-          <div class="text-center">
-            <h3>Conteúdo Interativo</h3>
-            <p>Nossa página de recursos oferece uma oportunidade única de aprendizado e diversão para crianças e adolescentes. Faça o download de guias, modelos, jogos e muito mais, tudo projetado para estimular a criatividade e o desenvolvimento.</p>
-            <a class="resources-btn" href="/resources">Saiba Mais!</a>
-          </div>
-  
-        </div>
-      </section>
-      
-      <!-- Cards em carrossel com comentários-->
-      
-      <section class="comments container-xxl pt-5">
+
+      </div>
+    </section>
+    
+    <!-- Cards em carrossel com comentários-->
+    <section class="comments">
+      <div class="container-xl">
         <div class="container">
-          <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-            <p class="fs-5 fw-medium text-primary">Testimonial</p>
-            <h1 class="display-5 mb-5">What Clients Say About Our Services!</h1>
-        </div>
-    
-        <div id="testimonialCarousel" class="carousel slide testimonial-carousel fadeInUp" data-delay="0.1s" data-bs-ride="carousel" data-bs-interval="5000">
-          <div class="caroulsel-inner">
-            <div class="carousel-item active">
-              <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
-                <img class="mb-4" src="/assets/img/team/amanda-lopes.jpg" alt="">
-                <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                <h5>Amanda</h5>
-                <span class="text-primary">Profession</span>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
-                <img class="mb-4" src="/assets/img/team/amanda-lopes.jpg" alt="">
-                <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                <h5>Yan</h5>
-                <span class="text-primary">Amanda</span>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
-                <img class="mb-4" src="/assets/img/team/amanda-lopes.jpg" alt="">
-                <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                <h5>Client Name</h5>
-                <span class="text-primary">Amigos</span>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
-                <img class="mb-4" src="/assets/img/team/amanda-lopes.jpg" alt="">
-                <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                <h5>Client Name</h5>
-                <span class="text-primary">Teste</span>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
-                <img class="mb-4" src="/assets/img/team/amanda-lopes.jpg" alt="">
-                <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                <h5>Client Name</h5>
-                <span class="text-primary">Profession</span>
-              </div>
-            </div>
+          <div class="text-center pb-5 pb-md-0 wow fadeInUp" >
+            <p id="cr" class="fs-5 fw-medium " ><b>Comentários do público </b></p>
+            <h1 id="tit" class="display-5 mb-5"><b>Veja o que as pessoas estão comentando sobre o coletivo</b></h1>
           </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </section>
-      
-        
-  
-      <!-- Cards com equipe do coletivo-->
-      <section class="team">
-        <section id="team" class="team">
-          <div class="container" data-aos="fade-up">
-    
-            <div class="section-title">
-              <h2>Time</h2>
-              <p>Conheça o time desse coletivo</p>
-            </div>
-    
-            <div class="row">
-    
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div class="member" data-aos="fade-up" data-aos-delay="100">
-                  <div class="member-img">
-                    <img src="assets/img/team/amanda-lopes.jpg" class="img-fluid" alt="">
-                    <div class="social">
-                      <a href=""><i class="bi bi-twitter"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                  <div class="member-info">
-                    <h4>Amanda Lopes</h4>
-                    <span>Arte Educadora / Artista Visual / Fotógrafa</span>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div class="member" data-aos="fade-up" data-aos-delay="200">
-                  <div class="member-img">
-                    <img src="assets/img/team/larissa-beltran.jpg" class="img-fluid" alt="">
-                    <div class="social">
-                      <a href=""><i class="bi bi-twitter"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                  <div class="member-info">
-                    <h4>Larissa Beltran</h4>
-                    <span>Fotógrafa / Arte Educadora</span>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div class="member" data-aos="fade-up" data-aos-delay="300">
-                  <div class="member-img">
-                    <img src="assets/img/team/mariana-ramalho.jpg" class="img-fluid" alt="">
-                    <div class="social">
-                      <a href=""><i class="bi bi-twitter"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                  <div class="member-info">
-                    <h4>Mariana Santos Ramanlho</h4>
-                    <span>Arte Educadora / Elaboradora de projetos sociais sustentáveis / Gastróloga</span>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div class="member" data-aos="fade-up" data-aos-delay="400">
-                  <div class="member-img">
-                    <img src="assets/img/team/yan-guilherme.jpg" class="img-fluid" alt="">
-                    <div class="social">
-                      <a href=""><i class="bi bi-twitter"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                  <div class="member-info">
-                    <h4>Yan Guilherme Barbosa Herculano</h4>
-                    <span>Artista Visual / Educador / Produtor cultural</span>
-                  </div>
-                </div>
-              </div>
-    
-            </div>
-    
-          </div>
-        </section>
-      </section>
-  
-      <!-- Collapse list-->
-      <section class="faq">
-        <div class="container">
-
-          <div class="section-title" data-aos="zoom-out">
-            <h2>F.A.Q</h2>
-            <p>Perguntas Frequentes</p>
-          </div>
-  
-          <ul class="faq-list">
-  
-            <li>
-              <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">O que é o coletivo Amigos do Bairro?
-                <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-              <div id="faq1" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  O Amigos do Bairro é um coletivo que atua na ocupação residencial da Torre da Paz, em Ermelino Matarazzo, formado por arte-educadores e voluntários das mais diversas áreas, que fazem ações em benefício da comunidade.
-                </p>
-              </div>
-            </li>
-  
-            <li>
-              <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Qual é a missão do coletivo Amigos do Bairro?
-                <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-              <div id="faq2" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  A missão do coletivo é aumentar o acesso a cultura, conhecimento e lazer para as crianças da região de Ermelino Matarazzo, mais precisamente na comunidade da Torre da Paz, por meio de atividades e projetos culturais. O Amigos do Bairro também visa a construção da sede, para ampliar o alcance de suas ações.
-                </p>
-              </div>
-            </li>
-
-            <li>
-              <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Qual é a importância da construção da sede do coletivo na Torre da Paz?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-              <div id="faq3" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  A construção da sede do coletivo na Torre da Paz é importante por vários motivos, incluindo a revitalização de um espaço público, a promoção de atividades culturais e educacionais para as crianças da região e a conscientização sobre a importância do uso adequado dos espaços para a comunidade local.
-                </p>
-              </div>
-            </li>
-
-            <li>
-              <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Onde fica a ocupação residencial da Torre da Paz?
-                <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-              <div id="faq4" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  A Torre da Paz em Ermelino Matarazzo fica localizada na Av. Paranaguá, 3000 - Vila Paranaguá, São Paulo - SP, 03808-080.
-                </p>
-              </div>
-            </li>
-  
-            <li>
-              <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Quais são as atividades oferecidas pelo coletivo Amigos do Bairro?
-                <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-              <div id="faq5" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  O coletivo Amigos do Bairro oferece uma variedade de atividades para as crianças da região de Ermelino Matarazzo, incluindo aulas de arte, oficinas de música, contação de histórias e outras atividades culturais.
-                </p>
-              </div>
-            </li>
-  
-            <li>
-              <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Como posso apoiar o coletivo Amigos do Bairro?
-                <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-              <div id="faq6" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Existem várias maneiras de apoiar o coletivo Amigos do Bairro, incluindo fazer doações de materiais para as atividades, participar dos projetos culturais como voluntário, divulgar o trabalho do coletivo nas redes sociais e contribuir para a construção da sede na Torre da Paz.
-                </p>
-              </div>
-            </li>
-  
-            
-  
-            
-  
-          </ul>
-  
-        </div>
-      </section>
-  
-      <!-- Direcionamento para direct Instagram-->
-      <section class="contact">
+          <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+            <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+              <img class="mb-4" src="assets/img/coments/cigarroparaguaio.jpg" alt="">
+              <p class="mb-4">amo fazer parte disso! amo essas crianças</p>
+              <h5>@cigarroparaguaio</h5>
               
-          <!-- Mapa da Torre da Paz-->
-          <section class="mapTorre">
+            </div>
+            <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+              <img class="mb-4" src="assets/img/coments/fatima.jpg" alt="">
+              <p class="mb-4">Lindo grupo com belas ações</p>
+              <h5>@fatima.ramalho.3998</h5>
+              
+            </div>
+            <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+              <img class="mb-4" src="assets/img/coments/todacortemseuvalor.jpg" alt="">
+              <p class="mb-4">Massa demais ver a potência de criação de cada criança presente, vida longa Amigos do Bairro, vocês são incríveis ❤️🔥❤️</p>
+              <h5>@todacortemseuvalor</h5>
+              
+            </div>
+            <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+              <img class="mb-4" src="assets/img/coments/ramalhoflavioj.jpg" alt="">
+              <p class="mb-4">Parabéns pelo trabalho e doação de cada um! Muito orgulho dessa turma👏😍</p>
+              <h5>@ramalhofalvioj</h5>
+              
+            </div>
+          </div>
+        </div>        
+      </div>
+    </section>
+
+    <!-- Cards com equipe do coletivo-->
+    <section id="team" class="team">
+      <section id="team" class="team">
+        <div class="container"  data-aos="zoom-out">
+          <div class="section-title">
+            <h2 style="color:white;">Time</h2>
+            <p>Conheça o time desse coletivo</p>
+          </div>
   
-          </section>
+          <div class="row">
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="100">
+                <div class="member-img">
+                  <img src="assets/img/team/amanda-lopes.jpg" class="img-fluid" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Amanda Lopes</h4>
+                  <span>Arte Educadora / Artista Visual / Fotógrafa</span>
+                </div>
+              </div>
+            </div>
   
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="200">
+                <div class="member-img">
+                  <img src="assets/img/team/larissa-beltran.jpg" class="img-fluid" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Larissa Beltran</h4>
+                  <span>Fotógrafa / Arte Educadora</span>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="300">
+                <div class="member-img">
+                  <img src="assets/img/team/mariana-ramalho.jpg" class="img-fluid" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Mariana Santos Ramanlho</h4>
+                  <span>Arte Educadora / Elaboradora de projetos sociais sustentáveis / Gastróloga</span>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="400">
+                <div class="member-img">
+                  <img src="assets/img/team/yan-guilherme.jpg" class="img-fluid" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Yan Guilherme Barbosa Herculano</h4>
+                  <span>Artista Visual / Educador / Produtor cultural</span>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
       </section>
-    
-    
-    </main>
+    </section>
+
+    <!-- Collapse list-->
+    <section id="faq" class="faq">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>F.A.Q</h2>
+          <p>Perguntas Frequentes</p>
+        </div>
+
+        <ul class="faq-list">
+
+          <li>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">O que é o coletivo Amigos do Bairro?
+              <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                O Amigos do Bairro é um coletivo que atua na ocupação residencial da Torre da Paz, em Ermelino Matarazzo, formado por arte-educadores e voluntários das mais diversas áreas, que fazem ações em benefício da comunidade.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Qual é a missão do coletivo Amigos do Bairro?
+              <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                A missão do coletivo é aumentar o acesso a cultura, conhecimento e lazer para as crianças da região de Ermelino Matarazzo, mais precisamente na comunidade da Torre da Paz, por meio de atividades e projetos culturais. O Amigos do Bairro também visa a construção da sede, para ampliar o alcance de suas ações.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Qual é a importância da construção da sede do coletivo na Torre da Paz?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                A construção da sede do coletivo na Torre da Paz é importante por vários motivos, incluindo a revitalização de um espaço público, a promoção de atividades culturais e educacionais para as crianças da região e a conscientização sobre a importância do uso adequado dos espaços para a comunidade local.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Onde fica a ocupação residencial da Torre da Paz?
+              <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                A Torre da Paz em Ermelino Matarazzo fica localizada na Av. Paranaguá, 3000 - Vila Paranaguá, São Paulo - SP, 03808-080.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Quais são as atividades oferecidas pelo coletivo Amigos do Bairro?
+              <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                O coletivo Amigos do Bairro oferece uma variedade de atividades para as crianças da região de Ermelino Matarazzo, incluindo aulas de arte, oficinas de música, contação de histórias e outras atividades culturais.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Como posso apoiar o coletivo Amigos do Bairro?
+              <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Existem várias maneiras de apoiar o coletivo Amigos do Bairro, incluindo fazer doações de materiais para as atividades, participar dos projetos culturais como voluntário, divulgar o trabalho do coletivo nas redes sociais e contribuir para a construção da sede na Torre da Paz.
+              </p>
+            </div>
+          </li>
+
+          
+
+          
+
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- Direcionamento para direct Instagram-->
+    <section id="contact" class="contact">
+      <h1 class="display-5 mb-5"><b>Entre em Contato</b></h1>
+    </section>
+            
+    <!-- Mapa da Torre da Paz-->
+    <section id="maptorre" class="mapTorre">
+      <h1 class="display-5 mb-5"><b>Rotas</b></h1>
+      <div class="row">
+        <div id="rota" class="col-lg-4 col-md-6">          
+          <h3><img src="assets/img/icons/favicon_io/favicon-32x32.png"> Fatec Zona Leste</h3>
+          <p>Av. Águia de Haia, 2983 - Cidade Antônio Estêvão de Carvalho, São Paulo - SP, 03694-000<br><br></p>
+        </div>
+        <div  class="maptorre">        
+          <iframe id="gmap" class="w-100 rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8703.062734498557!2d-46.47383030572875!3d-23.48976844829257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce61a7d8f72277%3A0x6415de58f7d826ed!2sErmelino%20Matarazzo%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003813-050!5e0!3m2!1spt-BR!2sbr!4v1685804503484!5m2!1spt-BR!2sbr" 
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
+        </div>
+    </section>
+
+  
+  
+  
+  </main>
     
     <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
@@ -483,65 +580,69 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
-              <h3>UpConstruction</h3>
+              <h3>Fatec Zona Leste</h3>
               <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
+                Av. Águia de Haia, 2983 - Cidade Antônio Estêvão de Carvalho, São Paulo - SP, 03694-000<br><br>
+                <strong>Phone:</strong> +55 (11) 2026-1303<br>
                 <strong>Email:</strong> info@example.com<br>
               </p>
               <div class="social-links d-flex mt-3">
-                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+                <a href="https://twitter.com/Fateczl_oficial" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.facebook.com/fateczl.oficial/" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/fateczl.oficial/" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/school/faculdade-de-tecnologia-zona-leste-fatec-zl/" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
           </div><!-- End footer info column-->
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Henrique Silva Sena</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
+              <li><a href="https://github.com/HenryPilotinho"><i class="bi bi-github"></i> Github</a></li>
+              <li><a href="https://www.instagram.com/sshenry_/"><i class="bi bi-instagram"></i> Instagram</a></li>
+              <li><a href="https://www.linkedin.com/in/henrique-silva-b34783178/"><i class="bi bi-linkedin"></i> Linkedin</a></li>
+              
             </ul>
           </div><!-- End footer links column-->
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Our Services</h4>
+            <h4>Hideaki Fukami</h4>
             <ul>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Product Management</a></li>
-              <li><a href="#">Marketing</a></li>
-              <li><a href="#">Graphic Design</a></li>
+              <li><a href="https://github.com/hideakifukami"><i class="bi bi-github"></i> Github</a></li>
+              <li><a href="https://www.instagram.com/hideaki.fukami"><i class="bi bi-instagram"></i> Instagram</a></li>
+              <li><a href="https://www.linkedin.com/in/hideaki-fukami"><i class="bi bi-linkedin"></i> Linkedin</a></li>
             </ul>
           </div><!-- End footer links column-->
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Hic solutasetp</h4>
+            <h4>Kauan Alex </h4>
             <ul>
-              <li><a href="#">Molestiae accusamus iure</a></li>
-              <li><a href="#">Excepturi dignissimos</a></li>
-              <li><a href="#">Suscipit distinctio</a></li>
-              <li><a href="#">Dilecta</a></li>
-              <li><a href="#">Sit quas consectetur</a></li>
+              <li><a href="#"><i class="bi bi-github"></i> Github</a></li>
+              <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+              <li><a href="#"><i class="bi bi-linkedin"></i> Linkedin</a></li>
             </ul>
           </div><!-- End footer links column-->
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Nobis illum</h4>
+            <h4>Denis Andrade </h4>
             <ul>
-              <li><a href="#">Ipsam</a></li>
-              <li><a href="#">Laudantium dolorum</a></li>
-              <li><a href="#">Dinera</a></li>
-              <li><a href="#">Trodelas</a></li>
-              <li><a href="#">Flexo</a></li>
+              <li><a href="#"><i class="bi bi-github"></i> Github</a></li>
+              <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+              <li><a href="#"><i class="bi bi-linkedin"></i> Linkedin</a></li>
             </ul>
-          </div><!-- End footer links column-->
+          </div>
+          <!-- End footer links column-->
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Lucas Trindade</h4>
+            <ul>
+              <li><a href="#"><i class="bi bi-github"></i> Github</a></li>
+              <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+              <li><a href="#"><i class="bi bi-linkedin"></i> Linkedin</a></li>
+            </ul>
+          </div>
+          <!-- End footer links column-->
+          
+
 
         </div>
       </div>
@@ -550,7 +651,7 @@
     <div class="footer-legal text-center position-relative">
       <div class="container">
         <div class="developers">
-          &copy; Copyright <strong><span>UpConstruction</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>Amigos do Bairro</span></strong>.
         </div>
       </div>
     </div>
@@ -567,6 +668,10 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
   </script>
 </body>
 </html>
