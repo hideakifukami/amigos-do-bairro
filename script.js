@@ -90,3 +90,13 @@ $(document).ready(function(){
     smartSpeed: 1000
   });
 });
+
+var animatedDiv = document.querySelector('.animated-div1');
+
+function startAnimation() {
+  animatedDiv.style.animation = 'slide 0.28s linear forwards';
+}
+
+function reverseAnimation() {
+  animatedDiv.style.animation = 'slide-reverse 0.28s linear forwards';
+}
