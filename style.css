@@ -53,7 +53,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 50px 0;
   overflow: hidden;
 }
 
@@ -69,7 +69,6 @@ section {
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aaaaaa;
   font-family: var(--font-primary);
 }
 
@@ -82,8 +81,16 @@ section {
   margin: 4px 10px;
 }
 
+.tittle-line::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: block;
+  background: var(--color-primary);
+  margin: 10px auto;
+}
+
 .section-title p {
-  margin: 0;
   margin: 0;
   font-size: 36px;
   font-weight: 700;
@@ -96,13 +103,20 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
-  z-index: 997;
-  position: absolute;
-  padding: 30px 0;
-  top: 0;
+  z-index: 999;
+  position: fixed;
+  height: 80px;
+  padding: 20px 0;
+  top: -5px;
   left: 0;
   right: 0;
+  background-color: transparent;
+  transition: background-color 0.5s ease-in-out;
+}
 
+.header.scrolled{
+  background-color: var(--color-primary);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
 }
 
 .header .logo img {
@@ -121,6 +135,8 @@ section {
 .header .logo h1 span {
   color: var(--color-primary);
 }
+
+
 
 /*--------------------------------------------------------------
 # Desktop Navigation
@@ -634,7 +650,6 @@ section {
 } */
 .comments{
   background-color: #f14b7de1;
-  text-align: center;
   
   
   
