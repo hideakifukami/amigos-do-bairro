@@ -1084,11 +1084,6 @@ h1{
   padding: 0;
 }
 
-.card-evento h3 {
-  top: 50%;
-  bottom: 50%;
-}
-
 .antes{
 margin: 0;
 width: 100%;
@@ -1113,8 +1108,6 @@ position: relative;
   opacity: 1; 
   background-color: #D9D9D9;
 }
-
-
 
 .text-evento{
   position: relative;

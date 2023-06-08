@@ -91,7 +91,7 @@ $(document).ready(function(){
   });
 });
 
-var animatedDiv = document.querySelector('.animated-div1');
+var animatedDiv = document.querySelector('.animated-div');
 
 function startAnimation() {
   animatedDiv.style.animation = 'slide 0.28s linear forwards';
