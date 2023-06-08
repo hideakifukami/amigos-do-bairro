@@ -105,9 +105,8 @@ section {
 .header {
   z-index: 999;
   position: fixed;
-  height: 80px;
-  padding: 20px 0;
-  top: -5px;
+  height: 100px;
+  top: -10px;
   left: 0;
   right: 0;
   background-color: transparent;
@@ -115,28 +114,15 @@ section {
 }
 
 .header.scrolled{
-  background-color: var(--color-primary);
+  background-color: lightblue;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 50px;
+  padding-left: 20px;
   margin-right: 6px;
 }
-
-.header .logo h1 {
-  font-size: 24px;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 0;
-  font-family: var(--font-primary);
-}
-
-.header .logo h1 span {
-  color: var(--color-primary);
-}
-
-
 
 /*--------------------------------------------------------------
 # Desktop Navigation
