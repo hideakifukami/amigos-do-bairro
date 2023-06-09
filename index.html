@@ -19,12 +19,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header id="header" class="header fixed-top d-flex align-items-center">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
+  <header id="header" class="header d-flex align-items-center">
+    <div class="fixed-top mt-4 container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Amigos do Bairro<span>.</span></h1>
+        <img src="assets/img/header/logo.png" alt="Logotipo Amigos do Bairro">
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -93,12 +91,6 @@
         <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-3.jpg)"></div>
         <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-4.jpg)"></div>
         <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-5.jpg)"></div>
-        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
-        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
       </div>    
     </section>
   
@@ -158,36 +150,153 @@
       </div>
     </section><!-- End About Section -->
     
-    <section class="infographics">
-
-    </section>
-    
     <!-- Paralax com forms em modal-->
     <section id="volunteer" class="volunteer">
       <div class="container" data-aos="zoom-in">
         <div class="text-center">
-          <h3>Voluntários</h3>
+          <h3  class="tittle-line">Voluntários</h3>
           <p>Junte-se a nós como voluntário e ajude-nos a revitalizar espaços, promover vivências artísticas e garantir o direito ao brincar. Se você deseja deixar um impacto positivo na comunidade, clique no botão abaixo e preencha o formulário. Venha fazer parte dessa incrível jornada de transformação!</p>
           <a class="volunteer-btn" href="#">Seja um Voluntário!</a>
         </div>
       </div>
     </section>
 
+    
+    <section class="infographics">
+
+    </section>
+    
+
     <!-- Cards com eventos direcionando para mais informações e fotos-->
     <section id="events" class="events">
-        <a href="/evento/1"></a>
+        <div class="container mx-auto">
+          <div class="section-title" data-aos="zoom-out">
+            <h2 style="color: black;">Eventos</h2>
+            <p>Ações Realizadas</p>
+          </div>
+          <div class="row">
+            <div class="card-evento">
+              <div class="antes" onmouseenter="startAnimation()" onmouseleave="reverseAnimation()">
+                <div class="depois">
+                  <div class="text-depois col">
+
+                  </div>
+                </div>
+                <div class="text-evento animated-div"> Evento <br> 18/04</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
     </section>
 
+    
+    <!-- Cards com artigos e direcionamento para cadastro-->
+    <section id="newsletter" class="newsletter">
+      <div class="container">
+        <div class="section-title" data-aos="zoom-out">
+          <h2 style="color: white;">Feed</h2>
+          <p>Notícias</p>
+        </div>
+      
+        <div class="row">
+          <!--Card ponta alta esquerda-->
+          <div class="col-4 mt-3">
+            <div class="card-artigo">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                
+              </div>
+            </div>
+          </div>  
+          <!--Card alto meio-->  
+          <div class="col-md-4 mt-3">
+            <div class="card-artigo">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>   
+          <!--Card ponta alta direita--> 
+          <div class="col-md-4 mt-3">
+            <div class="card-artigo">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card title</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>          
+              </div>
+            </div>
+          </div>
+          <!--Card ponta baixa esquerda-->
+          <div class="col-md-4 mt-3">
+            <div class="card-artigo">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>          
+              </div>
+            </div>
+          </div>
+          <!--Card baixa meio-->    
+          <div class="col-md-4 mt-3">
+            <div class="card-artigo">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                
+              </div>
+            </div>
+          </div>
+          <!--Card ponta baixa direita-->
+          <div class="col-md-4 mt-3">
+            <div class="card-artigo">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>          
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row mt-3">
+          <div class="card-inscricao col-12 card-newsletter p-5">    
+            <span><i class="fa fa-envelope-open-o fa-2x" aria-hidden="true"></i></span> 
+            <div class="text-center">
+              <h3  class="tittle-line mb-4">Inscreva-se na nossa newsletter!</h3>
+            </div>            
+            <div class="row">
+              <div class="col-9">
+                <input type="email" class="form-control py-3" id="inp1" placeholder="Insira seu e-mail">
+              </div>
+              <div class="col-3 btn newsletter-btn">
+                <button class="btn py-2">Cadastrar</button>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </section>
+    
     <!-- API Instagram -->
     
     <section id="insta" class="galery">
       <!-- Gallery -->
-      <div class="container mx-auto mt-4" id="instaz">
-        <img src="assets/img/insta.png">
-        <h1 id="instalog"><b>Galeria do Instagram</b></h1>
-      </div>
-      
+          
       <div class="container">
+        <div class="section-title" data-aos="zoom-out">
+          <h2 style="color: black;">Instagram</h2>
+          <p>Últimas Públicações</p>
+        </div>
         <div class="row justify-content-center">
           <div class="col-md-4  mb-4 mb-lg-0">
             <img
@@ -230,111 +339,12 @@
     </section>
     <!-- FIM Gallery -->
 
-    <!-- Cards com artigos e direcionamento para cadastro-->
-    <section id="newsletter" class="newsletter">
-      <div class="container">
-        <div class="section-title" data-aos="zoom-out">
-          <h2>Feed</h2>
-          <p>Notícias</p>
-        </div>
-      </div>
-      <div class="container mx-auto mt-4 d-flex">
-        <div class="row">
-          <!--Card ponta alta esquerda-->
-          <div class="col-md-4 mt-3">
-            <div class="card-artigo" style="width: 18rem;">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                
-              </div>
-            </div>
-          </div>  
-          <!--Card alto meio-->  
-          <div class="col-md-4 mt-3">
-            <div class="card-artigo" style="width: 18rem;">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>   
-          <!--Card ponta alta direita--> 
-          <div class="col-md-4 mt-3">
-            <div class="card-artigo" style="width: 18rem;">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card title</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>          
-              </div>
-            </div>
-          </div>
-          <!--Card ponta baixa esquerda-->
-          <div class="col-md-4 mt-3">
-            <div class="card-artigo" style="width: 18rem;">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>          
-              </div>
-            </div>
-          </div>
-          <!--Card baixa meio-->    
-          <div class="col-md-4 mt-3">
-            <div class="card-artigo" style="width: 18rem;">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                
-              </div>
-            </div>
-          </div>
-          <!--Card ponta baixa direita-->
-          <div class="col-md-4 mt-3">
-            <div class="card-artigo" style="width: 18rem;">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>          
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-              
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-4 col-sm-12 col-xs-12"> 
-            <div class="card-newsletter p-3 p-md-4 text-white">    
-              <span><i class="fa fa-envelope-open-o fa-2x" aria-hidden="true"></i></span> 
-              <h6 class="my-3"> Se inscreva no nosso newsletter </h6>
-              <div class="row d-flex my-2 pr-2 pr-md-5 div1">
-                <div class="col-9">
-                  <input type="email" class="form-control py-3" id="inp1" placeholder="Enter email address">
-                </div>
-                <div class="col-3 px-0">
-                  <button class="btn text-white px-4 py-2"> OK </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Parallax Atividade Lúdica + Materiais para Download + Biblioteca Digital + Recursos da Região -->
     <section id="resources" class="resources">
       <div class="container" data-aos="zoom-in">
 
-        <div class="text-center  data-aos="zoom-out"">
-          <h3>Conteúdo Interativo</h3>
+        <div class="text-center"  data-aos="zoom-out">
+          <h3 class="tittle-line">Conteúdo Interativo</h3>
           <p>Nossa página de recursos oferece uma oportunidade única de aprendizado e diversão para crianças e adolescentes. Faça o download de guias, modelos, jogos e muito mais, tudo projetado para estimular a criatividade e o desenvolvimento.</p>
           <a class="resources-btn" href="/resources">Saiba Mais!</a>
         </div>
@@ -342,130 +352,90 @@
       </div>
     </section>
     
-    <!-- Cards em carrossel com comentários-->
-    <section class="comments">
-      <div class="container-xl">
-        <div class="container">
-          <div class="text-center pb-5 pb-md-0 wow fadeInUp" >
-            <p id="cr" class="fs-5 fw-medium " ><b>Comentários do público </b></p>
-            <h1 id="tit" class="display-5 mb-5"><b>Veja o que as pessoas estão comentando sobre o coletivo</b></h1>
-          </div>
-          <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-            <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
-              <img class="mb-4" src="assets/img/coments/cigarroparaguaio.jpg" alt="">
-              <p class="mb-4">amo fazer parte disso! amo essas crianças</p>
-              <h5>@cigarroparaguaio</h5>
-              
-            </div>
-            <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
-              <img class="mb-4" src="assets/img/coments/fatima.jpg" alt="">
-              <p class="mb-4">Lindo grupo com belas ações</p>
-              <h5>@fatima.ramalho.3998</h5>
-              
-            </div>
-            <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
-              <img class="mb-4" src="assets/img/coments/todacortemseuvalor.jpg" alt="">
-              <p class="mb-4">Massa demais ver a potência de criação de cada criança presente, vida longa Amigos do Bairro, vocês são incríveis ❤️🔥❤️</p>
-              <h5>@todacortemseuvalor</h5>
-              
-            </div>
-            <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
-              <img class="mb-4" src="assets/img/coments/ramalhoflavioj.jpg" alt="">
-              <p class="mb-4">Parabéns pelo trabalho e doação de cada um! Muito orgulho dessa turma👏😍</p>
-              <h5>@ramalhofalvioj</h5>
-              
-            </div>
-          </div>
-        </div>        
-      </div>
-    </section>
-
     <!-- Cards com equipe do coletivo-->
     <section id="team" class="team">
-      <section id="team" class="team">
-        <div class="container"  data-aos="zoom-out">
-          <div class="section-title">
-            <h2 style="color:white;">Time</h2>
-            <p>Conheça o time desse coletivo</p>
-          </div>
-  
-          <div class="row">
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="100">
-                <div class="member-img">
-                  <img src="assets/img/team/amanda-lopes.jpg" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Amanda Lopes</h4>
-                  <span>Arte Educadora / Artista Visual / Fotógrafa</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="200">
-                <div class="member-img">
-                  <img src="assets/img/team/larissa-beltran.jpg" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Larissa Beltran</h4>
-                  <span>Fotógrafa / Arte Educadora</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="300">
-                <div class="member-img">
-                  <img src="assets/img/team/mariana-ramalho.jpg" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Mariana Santos Ramanlho</h4>
-                  <span>Arte Educadora / Elaboradora de projetos sociais sustentáveis / Gastróloga</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="400">
-                <div class="member-img">
-                  <img src="assets/img/team/yan-guilherme.jpg" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Yan Guilherme Barbosa Herculano</h4>
-                  <span>Artista Visual / Educador / Produtor cultural</span>
-                </div>
-              </div>
-            </div>
-  
-          </div>
-  
+      <div class="container"  data-aos="zoom-out">
+        <div class="section-title">
+          <h2 style="color:white;">Arte-educadores</h2>
+          <p>Conheça o time desse coletivo</p>
         </div>
-      </section>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/team/amanda-lopes.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Amanda Lopes</h4>
+                <span>Arte Educadora / Artista Visual / Fotógrafa</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="assets/img/team/larissa-beltran.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Larissa Beltran</h4>
+                <span>Fotógrafa / Arte Educadora</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="assets/img/team/mariana-ramalho.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Mariana Santos Ramanlho</h4>
+                <span>Arte Educadora / Elaboradora de projetos sociais sustentáveis / Gastróloga</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/team/yan-guilherme.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Yan Guilherme Barbosa Herculano</h4>
+                <span>Artista Visual / Educador / Produtor cultural</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </section>
 
     <!-- Collapse list-->
@@ -546,24 +516,77 @@
 
       </div>
     </section>
+    
+    <!-- Cards em carrossel com comentários-->
+    <section class="comments">
+      <div class="container">
+        <div class="section-title">
+          <h2 style="color:white;">Comentários</h2>
+          <p>O que falam do coletivo?</p>
+        </div>
+        <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                <img class="mb-4" src="assets/img/coments/cigarroparaguaio.jpg" alt="">
+                <p class="mb-4">amo fazer parte disso! amo essas crianças</p>
+                <h5>@cigarroparaguaio</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                <img class="mb-4" src="assets/img/coments/fatima.jpg" alt="">
+                <p class="mb-4">Lindo grupo com belas ações</p>
+                <h5>@fatima.ramalho.3998</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                <img class="mb-4" src="assets/img/coments/todacortemseuvalor.jpg" alt="">
+                <p class="mb-4">Massa demais ver a potência de criação de cada criança presente, vida longa Amigos do Bairro, vocês são incríveis ❤️🔥❤️</p>
+                <h5>@todacortemseuvalor</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                <img class="mb-4" src="assets/img/coments/ramalhoflavioj.jpg" alt="">
+                <p class="mb-4">Parabéns pelo trabalho e doação de cada um! Muito orgulho dessa turma👏😍</p>
+                <h5>@ramalhofalvioj</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Direcionamento para direct Instagram-->
     <section id="contact" class="contact">
-      <h1 class="display-5 mb-5"><b>Entre em Contato</b></h1>
+      <div class="container">
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Contato</h2>
+          <p>Fale Conosco</p>
+        </div>
+      </div>
     </section>
             
     <!-- Mapa da Torre da Paz-->
     <section id="maptorre" class="mapTorre">
-      <h1 class="display-5 mb-5"><b>Rotas</b></h1>
-      <div class="row">
-        <div id="rota" class="col-lg-4 col-md-6">          
-          <h3><img src="assets/img/icons/favicon_io/favicon-32x32.png"> Fatec Zona Leste</h3>
-          <p>Av. Águia de Haia, 2983 - Cidade Antônio Estêvão de Carvalho, São Paulo - SP, 03694-000<br><br></p>
+      <div class="container">
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Localização</h2>
+          <p>Onde fica a torre da paz?</p>
         </div>
-        <div  class="maptorre">        
-          <iframe id="gmap" class="w-100 rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8703.062734498557!2d-46.47383030572875!3d-23.48976844829257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce61a7d8f72277%3A0x6415de58f7d826ed!2sErmelino%20Matarazzo%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003813-050!5e0!3m2!1spt-BR!2sbr!4v1685804503484!5m2!1spt-BR!2sbr" 
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
+        <div class="row">
+          <div>
+            <iframe id="gmap" class="w-100 rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8703.062734498557!2d-46.47383030572875!3d-23.48976844829257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce61a7d8f72277%3A0x6415de58f7d826ed!2sErmelino%20Matarazzo%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003813-050!5e0!3m2!1spt-BR!2sbr!4v1685804503484!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
+          </div>
+          <div id="rota">
+            <h3><img src="assets/img/icons/favicon_io/favicon-32x32.png"> Fatec Zona Leste</h3>
+            <p>Av. Águia de Haia, 2983 - Cidade Antônio Estêvão de Carvalho, São Paulo - SP, 03694-000<br><br></p>
+          </div>
         </div>
+      </div>
     </section>
 
   

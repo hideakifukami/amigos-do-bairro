@@ -1,3 +1,17 @@
+// Fixed NavBar
+
+window.addEventListener('scroll', function() {
+  var header = document.querySelector('.header')
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+  if (scrollTop > 0) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
+
 /* Mobile nav toggle */
 
 const mobileNavShow = document.querySelector('.mobile-nav-show');
@@ -90,3 +104,15 @@ $(document).ready(function(){
     smartSpeed: 1000
   });
 });
+
+// Events
+
+var animatedDiv = document.querySelector('.animated-div');
+
+function startAnimation() {
+  animatedDiv.style.animation = 'slide 0.28s linear forwards';
+}
+
+function reverseAnimation() {
+  animatedDiv.style.animation = 'slide-reverse 0.28s linear forwards';
+}
