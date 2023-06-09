@@ -3,15 +3,19 @@
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Roboto", sans-serif;
   --font-secondary: "Work Sans", sans-serif;
+  --font-titulos: "Chela One" 
+  
 }
   
 /* Cores */
 :root {
   --color-default: rgb(9, 9, 26);
  /*  --color-yellow: #f2f492; */
-  --color-blue: #84d4ea;
+  --color-blue: #60dcff;
   --color-pink: #D98FA6;
+  --color-pink2: #ff719e;
   --color-green: #a4f3d5;
+  --color-green2: #5ccda2;
  --color-yellow: #FFC451;
  /* --color-blue: #5AC1FB;
   --color-pink: #F3608C;
@@ -46,7 +50,9 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
+h1{
+  
+}
 h2,
 h3,
 h4,
@@ -962,8 +968,86 @@ section {
 /*--------------------------------------------------------------
 # Eventos
 --------------------------------------------------------------*/
+#events{
+  background-color: var(--color-green2);
+}
+.card-evento{
+  background: lightyellow;
+  border-radius: 65px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 120px;
+  padding: 0;
+}
+
+.antes{
+margin: 0;
+width: 100%;
+height: 100%;
+padding: 0px;
+background-image: url();
+border-radius: 65px;
+position: relative;
+}
+
+.depois{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 65px;
+}
+
+.antes:hover .depois {
+  opacity: 1; 
+  background-color: lightpink;
+  width: 120px;
+}
 
 
+.text-evento{
+  position: relative;
+  width: 125px;
+  height: 120px;  
+  background: lightpink;
+  border-radius: 65px;
+  margin: 0; 
+  float: right;
+  text-align: center;
+  padding-top: 33px;
+  padding-bottom: 42px; 
+}
+
+.text-depois{
+  padding-left: 160px;
+  padding-right: 70px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.antes:hover .text-evento{
+  background-image: url();
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(-100% + 120px);
+  }
+}
+
+@keyframes slide-reverse {
+  0% {
+    left: calc(-100% + 120px);
+  }
+  100% {
+    left: 0;
+  }
+}
 
 /*--------------------------------------------------------------
 # Notícias
@@ -975,6 +1059,7 @@ section {
 
 .newsletter .newsletter-btn {
   color: var(--color-default);
+  
 }
 
 .newsletter .newsletter-btn:hover  {
@@ -1060,14 +1145,14 @@ section {
 --------------------------------------------------------------*/
 
 .galery{
-  /* background: var(--color-yellow); */
+  background: var(--color-pink2); 
 }
 
 /*--------------------------------------------------------------
 # team
 --------------------------------------------------------------*/
 .team {
-  background: var(--color-yellow);
+  background: var(--color-blue);
   padding: 60px 0;
 }
 #timeh2{
@@ -1223,7 +1308,7 @@ section {
 --------------------------------------------------------------*/
 
 .comments{
-  background-color: var(--color-yellow);
+  background-color: var(--color-green2);
 }
 
 .testimonial-item {
@@ -1392,80 +1477,3 @@ section {
   color: var(--color-yellow);
 }
 
-.card-evento{
-  background: lightyellow;
-  border-radius: 65px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  height: 120px;
-  padding: 0;
-}
-
-.antes{
-margin: 0;
-width: 100%;
-height: 100%;
-padding: 0px;
-background-image: url();
-border-radius: 65px;
-position: relative;
-}
-
-.depois{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  border-radius: 65px;
-}
-
-.antes:hover .depois {
-  opacity: 1; 
-  background-color: lightpink;
-  width: 120px;
-}
-
-
-.text-evento{
-  position: relative;
-  width: 125px;
-  height: 120px;  
-  background: lightpink;
-  border-radius: 65px;
-  margin: 0; 
-  float: right;
-  text-align: center;
-  padding-top: 33px;
-  padding-bottom: 42px; 
-}
-
-.text-depois{
-  padding-left: 160px;
-  padding-right: 70px;
-  padding-top: 20px;
-  padding-bottom: 25px;
-}
-
-.antes:hover .text-evento{
-  background-image: url();
-}
-
-@keyframes slide {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: calc(-100% + 120px);
-  }
-}
-
-@keyframes slide-reverse {
-  0% {
-    left: calc(-100% + 120px);
-  }
-  100% {
-    left: 0;
-  }
-}
