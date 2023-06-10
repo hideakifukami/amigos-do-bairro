@@ -1321,7 +1321,7 @@ position: relative;
 --------------------------------------------------------------*/
 
 .galery{
-  background: var(--color-pink2); 
+
 }
 
 /*--------------------------------------------------------------
@@ -1329,7 +1329,7 @@ position: relative;
 --------------------------------------------------------------*/
 
 .newsletter{
-  background-color: var(--color-pink);
+  background-color: var(--color-blue);
 }
 
 .newsletter .newsletter-btn {
