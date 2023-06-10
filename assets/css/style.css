@@ -907,7 +907,7 @@ section {
   background-color: white;
 }
 
-.aboutTorre .aboutTorre-btn {
+.aboutTorre-btn {
   margin: 0 auto;
   font-family: var(--font-primary);
   background-color: white;
@@ -922,7 +922,7 @@ section {
   border: 2px solid var(--color-yellow);
 }
 
-.aboutTorre .aboutTorre-btn:hover {
+.aboutTorre-btn:hover {
   background-color: var(--color-yellow);
   color: white;
 }
@@ -961,8 +961,15 @@ section {
 # Infográficos
 --------------------------------------------------------------*/
 
-.infographics {
+.infographics  {
   /* background-color: var(--color-blue); */
+}
+
+
+.infographics img {
+  padding: 0;
+  border-radius: 20px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 /*--------------------------------------------------------------
@@ -1429,14 +1436,10 @@ position: relative;
 }
 
 #rota h3{
-  text-align: center;
   text-transform: uppercase;
-  padding-top: 30px; 
+  padding: 20px 0; 
 }
 
-#rota p {
-  text-align: center;
-}
 
 
 /*--------------------------------------------------------------
