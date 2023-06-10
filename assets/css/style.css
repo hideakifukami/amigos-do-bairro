@@ -962,7 +962,7 @@ section {
 --------------------------------------------------------------*/
 
 .infographics  {
-  /* background-color: var(--color-blue); */
+ background-color: var(--color-blue); 
 }
 
 
@@ -976,7 +976,7 @@ section {
 # Eventos
 --------------------------------------------------------------*/
 #events{
-  background-color: var(--color-green2);
+  
 }
 .card-evento{
   background: lightyellow;
@@ -1225,7 +1225,7 @@ position: relative;
 --------------------------------------------------------------*/
 
 .galery{
-  background: var(--color-pink2); 
+  
 }
 
 /*--------------------------------------------------------------
