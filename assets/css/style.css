@@ -962,7 +962,7 @@ section {
 --------------------------------------------------------------*/
 
 .infographics  {
-  /* background-color: var(--color-blue); */
+ background-color: var(--color-blue); 
 }
 
 
@@ -1226,6 +1226,106 @@ position: relative;
 
 /*--------------------------------------------------------------
 # Notícias
+--------------------------------------------------------------*/
+
+.newsletter{
+  
+}
+
+.newsletter .newsletter-btn {
+  color: var(--color-default);
+  
+}
+
+.newsletter .newsletter-btn:hover  {
+  color: white;
+}
+
+.recent-blog-posts .post-item {
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.recent-blog-posts .post-item .post-img img {
+  transition: 0.5s;
+  border-radius: 10px 10px 0 0;
+}
+
+.recent-blog-posts .post-item .post-date {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-yellow);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 6px 12px;
+  font-weight: 500;
+}
+
+.recent-blog-posts .post-item .post-content {
+  padding: 30px;
+}
+
+.recent-blog-posts .post-item .post-title {
+  font-size: 24px;
+  color: var(--color-default);
+  font-weight: 700;
+  transition: 0.3s;
+  margin-bottom: 15px;
+}
+
+.recent-blog-posts .post-item .meta i {
+  font-size: 16px;
+  color: var(--color-yellow);
+}
+
+.recent-blog-posts .post-item .meta span {
+  font-size: 15px;
+  color: #838893;
+}
+
+.recent-blog-posts .post-item hr {
+  color: #888;
+  margin: 20px 0;
+}
+
+.recent-blog-posts .post-item .readmore {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  line-height: 1;
+  transition: 0.3s;
+  color: #838893;
+}
+
+.recent-blog-posts .post-item .readmore i {
+  line-height: 0;
+  margin-left: 6px;
+  font-size: 16px;
+}
+
+.recent-blog-posts .post-item:hover .post-title,
+.recent-blog-posts .post-item:hover .readmore {
+  color: var(--color-yellow);
+}
+
+.recent-blog-posts .post-item:hover {
+  transform: scale(1.025);
+}
+
+
+/*--------------------------------------------------------------
+# Instagram API
+--------------------------------------------------------------*/
+
+.galery{
+  background: var(--color-pink2); 
+}
+
+/*--------------------------------------------------------------
+# team
 --------------------------------------------------------------*/
 
 .newsletter{
