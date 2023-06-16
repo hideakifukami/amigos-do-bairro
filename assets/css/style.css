@@ -493,7 +493,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Blog Details
+# Detalhes do Artigo
 --------------------------------------------------------------*/
 
 .blog .blog-details {
@@ -680,6 +680,210 @@ section {
   font-style: italic;
   color: rgba(108, 117, 125, 0.8);
   margin-bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Detalhes da Ação
+--------------------------------------------------------------*/
+.project-details img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.project-details .portfolio-info h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 2px;
+  background: var(--color-yellow);
+  left: 0;
+  bottom: 0;
+}
+
+.project-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.project-details .portfolio-info ul li {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.project-details .portfolio-info ul strong {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #838893;
+  font-size: 14px;
+}
+
+.project-details .portfolio-info .btn-visit {
+  padding: 8px 15px;
+  margin-top: 10px;;
+  background: transparent;
+  color: var(--color-default);
+  border: 1px solid var(--color-yellow);
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.project-details .portfolio-info .btn-visit:hover {
+  background: var(--color-yellow);
+  color: white;
+}
+
+.project-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--color-default);
+}
+
+.project-details .portfolio-description p {
+  padding: 0;
+  text-align: justify;
+  margin: 20px 0;
+
+}
+
+.project-details .portfolio-description .testimonial-item {
+  padding: 30px 30px 0 30px;
+  position: relative;
+  background: #f5f6f7;
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+.project-details .portfolio-description .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 50px;
+  border: 6px solid #fff;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.project-details .portfolio-description .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0 5px 0;
+  padding-top: 20px;
+}
+
+.project-details .portfolio-description .testimonial-item h4 {
+  font-size: 14px;
+  color: #6c757d;
+  margin: 0;
+}
+
+.project-details .portfolio-description .testimonial-item .quote-icon-left,
+.project-details .portfolio-description .testimonial-item .quote-icon-right {
+  color: #ffd565;
+  font-size: 26px;
+  line-height: 0;
+}
+
+.project-details .portfolio-description .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.project-details .portfolio-description .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+  transform: scale(-1, -1);
+}
+
+.project-details .portfolio-description .testimonial-item p {
+  font-style: italic;
+  margin: 0 0 15px 0 0 0;
+  padding: 0;
+}
+
+
+
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.services .service-item {
+  padding: 40px;
+  background: #fff;
+  height: 100%;
+}
+
+.services .service-item .icon {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.services .service-item .icon i {
+  color: var(--color-default);
+  font-size: 40px;
+  transition: ease-in-out 0.3s;
+  z-index: 2;
+  position: relative;
+  line-height: 1.8;
+}
+
+.services .service-item .icon:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #f0f1f2;
+  border-radius: 50px;
+  z-index: 1;
+  top: 10px;
+  right: -15px;
+  transition: 0.3s;
+}
+
+.services .service-item h3 {
+  color: var(--color-default);
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  padding-bottom: 8px;
+  font-size: 22px;
+  position: relative;
+  display: inline-block;
+  border-bottom: 4px solid #ebebed;
+  transition: 0.3s;
+}
+
+.services .service-item p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .service-item .readmore {
+  margin-top: 15px;
+  display: inline-block;
+  color: var(--color-yellow);
+}
+
+.services .service-item:hover .icon:before {
+  background: var(--color-yellow);
+}
+
+.services .service-item:hover h3 {
+  border-color: var(--color-yellow);
 }
 
 
@@ -1134,7 +1338,7 @@ position: relative;
   font-weight: 400;
   color: #fff;
   display: inline-block;
-  background-color: var(--color-primary);
+  background-color: var(--color-yellow);
 }
 
 .projects .portfolio-content .portfolio-info p {
@@ -1162,7 +1366,7 @@ position: relative;
 
 .projects .portfolio-content .portfolio-info .preview-link:hover,
 .projects .portfolio-content .portfolio-info .details-link:hover {
-  color: var(--color-primary);
+  color: var(--color-yellow);
 }
 
 .projects .portfolio-content .portfolio-info .details-link {
